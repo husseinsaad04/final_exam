@@ -1,0 +1,30 @@
+inc A   A= A+1
+inc B
+inc B
+sub B, A, C
+
+intstructions are 9 bit long
+
+<opcode> <operant_1> <operand_2> <operand_3> - where to write result
+3 bits    2bits        2bits        2bits
+
+101        00           00          00
+
+9 bits of inc A=101000000
+16 bit instuctuin 0000 0001 0100 0000
+
+16 bit instruction in Hex representation 0X0140
+
+
+inc B
+
+101     01    00    01
+101010000
+0000  0001  0101 0000 = 0x0151
+
+
+sub B, A, C
+
+011 01 00 10
+
+0000 0000 1101 0010  = 0x00D2
